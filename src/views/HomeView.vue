@@ -1,18 +1,17 @@
 <template>
-  <hello-world />
+  <div class="about">
+    <h1>This is an home page {{ store.numberOfFlights }}</h1>
+    <ul id="example-1">
+  <li v-for="item in store.flights" :key="item.id">
+    <FlightDetail :flight="item" />
+  </li>
+</ul>
+  </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
+<script lang='ts' setup>
+import { useFlightStore } from './../stores/flight'
+const store = useFlightStore();
 
-// Components
-import HelloWorld from '../components/HelloWorld.vue';
-
-export default defineComponent({
-  name: 'HomeView',
-
-  components: {
-    HelloWorld,
-  },
-});
 </script>
+
