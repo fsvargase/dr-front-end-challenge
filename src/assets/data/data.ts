@@ -47,5 +47,4 @@ export const data = [{"id":1,"origin":"Xinjia","destination":"Mosina","departure
 {"id":47,"origin":"Lianran","destination":"Palaífyto","departure_date":"31-12-2022","arrival_date":"7/9/2023","price":1967,"airline":"Stanton, Dicki and Rogahn","number_scales":3,"flight_time":107},
 {"id":48,"origin":"Boca Raton","destination":"Pamoyanan","departure_date":"07-10-2022","arrival_date":"10/26/2023","price":2021,"airline":"Kling, Donnelly and O'Keefe","number_scales":4,"flight_time":195},
 {"id":49,"origin":"Nowy Tomyśl","destination":"Zhouling","departure_date":"01-06-2023","arrival_date":"11/27/2022","price":1845,"airline":"Friesen-Feil","number_scales":5,"flight_time":29},
-{"id":50,"origin":"Cibodas","destination":"Gerelayang","departure_date":"09-11-2022","arrival_date":"4/14/2023","price":1198,"airline":"Turcotte-Grady","number_scales":2,"flight_time":78},
-{"id":51,"origin":"Dromiskin","destination":"Hyesan-si","departure_date":"01-10-2023","arrival_date":"7/11/2023","price":1958,"airline":"Nolan-Stark","number_scales":3,"flight_time":352}]
+{"id":50,"origin":"Cibodas","destination":"Gerelayang","departure_date":"09-11-2022","arrival_date":"4/14/2023","price":1198,"airline":"Turcotte-Grady","number_scales":2,"flight_time":78}]

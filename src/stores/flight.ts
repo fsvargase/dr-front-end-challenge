@@ -7,6 +7,7 @@ export const useFlightStore = defineStore('flight', {
         flights: [] as Flight[],
         resulSearch: [] as Flight[],
         numberOfFlights: 0,
+        cities: [] as string[],
     }),
 
     actions: {
@@ -22,9 +23,10 @@ export const useFlightStore = defineStore('flight', {
         getNumberOfFlights() {
             return this.numberOfFlights ;
         },
-        loadFlights(flights:Flight[]) {
+        loadFlights(flights:Flight[], cities:string[]) {
             this.flights = flights;
             this.numberOfFlights = this.flights.length;
+            this.cities = cities;
             this.resulSearch=[];
         },
     }

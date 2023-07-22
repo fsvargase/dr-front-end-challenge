@@ -8,6 +8,9 @@ import { useFlightStore } from './stores/flight'
 import {data} from './assets/data/data';
 import { Flight } from './interfaces/flight'
 import {addMinutesToDate} from './utils/date'
+import VueDatePicker from '@vuepic/vue-datepicker';
+import '@vuepic/vue-datepicker/dist/main.css'
+
 loadFonts()
 
 const pinia = createPinia()
@@ -16,6 +19,12 @@ const app = createApp(App)
 app.use(pinia)
 const store = useFlightStore() 
 const flightToLoad:Flight[] = [];
+const origins: string[]= data.map((item)=>item.origin).sort();
+const destinations: string[]= data.map((item)=>item.destination).sort();
+const cities: string[] =  [...origins,...destinations].sort();
+console.log(cities);
+
+
 for (const element of data) {
     flightToLoad.push({
         id:   element.id,
@@ -30,7 +39,8 @@ for (const element of data) {
     } );
     
 }
-store.loadFlights(flightToLoad);
+store.loadFlights(flightToLoad,cities);
+app.component('VueDatePicker', VueDatePicker);
 
 app.use(router)
 app.use(vuetify)

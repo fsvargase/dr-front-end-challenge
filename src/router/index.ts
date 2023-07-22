@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import MainPage from '../pages/MainPage.vue'
-import SearchView from '../views/SearchView.vue'
+import SearchPage from '../pages/SearchPage.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -11,7 +11,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/search',
     name: 'search',
-    component: SearchView
+    component: SearchPage
   }
 ]
 
