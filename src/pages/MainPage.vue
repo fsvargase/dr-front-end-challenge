@@ -21,7 +21,6 @@ import FlightDetail from '../components/FlightDetail.vue';
 import { useFlightStore } from './../stores/flight'
 
 const store = useFlightStore();
-console.log(store.flights);
 </script>
 
 
